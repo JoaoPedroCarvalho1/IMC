@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medidor de IMC</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"></link>
+</head>
+<body>
+
+    <div class="maxContainer">
+
+        <h1>Calcule IMC</h1>
+        <p class="text">IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+
+            O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+            
+            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+        <div class="container">
+        <p>Peso(ex: 60.5)</p>
+        <input id="weight" type="number" placeholder="Peso em KG">
+        <p>Altura (ex:1.70)</p>
+        <input id="height" type="number" placeholder="Altura em Metros">
+        <button id="calc" onclick="calc()">Calcular</button>
+        </div>
+
+        <h2 class="titleList">Veja a interpretação do IMC</h2> 
+
+        <div class="list">
+            <ul class="valor">
+                <h4>IMC</h4>
+                <li>MENOR QUE 18,5</li>
+                <li>ENTRE 18,5 E 24,9</li>
+                <li>ENTRE 25,0 E 29,9</li>
+                <li>ENTRE 30,0 E 39,9</li>
+                <li>MAIOR QUE 40,0</li>
+            </ul>
+            <ul class="class">
+                <h4>Classificação</h4>
+                <li>MAGREZA</li>
+                <li>NORMAL</li>
+                <li>SOBREPESO</li>
+                <li>OBESIDADE</li>
+                <li>OBESIDADE GRAVE</li>
+            </ul>
+    
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
